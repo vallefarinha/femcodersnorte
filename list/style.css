@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin: 2% 5%;
+}
+
+.item-mxcix {
+    margin: 0;
+}
