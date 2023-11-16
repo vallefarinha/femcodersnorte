@@ -6,60 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../public/css/main.css">
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../public/css/header.css">
   <link rel="stylesheet" href="../public/css/custom.css">
+  <link rel="stylesheet" href="../public/css/text.css">
+  <link rel="stylesheet" href="../public/css/colors.css">
+  <link rel="stylesheet" href="../public/css/animations.css">
+  <link rel="stylesheet" href="../public/css/buttons.css">
+  <link rel="stylesheet" href="../public/css/icons.css">
+  <link rel="stylesheet" href="../public/css/footer.css">  
+  <link rel="stylesheet" href="../public/css/mediaqueries.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../src/sass/custom.scss">
 </head>
 
-<body class="bg-body-secondary">
-
-  <header>
-    <nav class="navbar navbar-expand-lg mt-3 m-5" width="1440" height="276">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../src/assets/logo/logo.svg" alt="Logo" width="142" max-height="49"
-            class="d-inline-block align-text-center">
-        </a>
+<body>
+  <header>   
+    <nav class="navbar fixed-top" id="top">
+      <div class="logo" >
+        <a href="#top"><img src="../src/assets/logo/logo.svg" alt="Logo"></a>
       </div>
-      <div class="navbar navbar-expand-md">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#description">DESCRIPTION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features">FEATURES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#screens">SCREENS</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">EXTRA
-              </a>
-              <ul class="dropdown-menu bg-body-secondary">
-                <li><a class="dropdown-item" href="#article-details">ARTICLE DETAILS</a></li>
-                <li><a class="dropdown-item" href="#">TERMS CONDITIONS</a></li>
-                <li><a class="dropdown-item" href="#">PRIVACY POLICY</a></li>
-              </ul>
-            <li class="nav-item"><button type="button" class="btn btn-outline-danger rounded-pill">DOWNLOAD</button>
-            </li>
-            </li>
-          </ul>
-        </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#description">DESCRIPTION</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#screens">SCREENS</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">EXTRA</a>
+            <div class="dropdown-content">
+              <a href="#">SERVIÇO</a>
+              <a href="#">SERVIÇO</a>
+              <a href="#">SERVIÇO</a>
+            </div>
+          </li>
+          <a href="https://factoriaf5.org/"><li><button type="button" class="rounded-pill btn-download fw-bold">DOWNLOAD</button></li></a>
+        </ul>
+        
       </div>
     </nav>
-    <div class="d-flex justify-content-between mt-3 m-5">
-      <img src="../src/assets/figures/decorative-green-diamond.svg" alt="Logo" width="16" max-height="16"
-        class="d-inline-block align-text-top">
-      <img src="../src/assets/figures/decorative-yellow-circle.svg" alt="Logo" width="16" max-height="16"
-        class="d-inline-block align-text-top">
+    <div class="container-figures">
+      <img src="../src/assets/figures/decorative-green-diamond.svg" alt="Logo" width="16" max-height="16">
+      <img src="../src/assets/figures/decorative-yellow-circle.svg" alt="Logo" width="16" max-height="16">
     </div>
-    <div class="container mt-3 text-center" id="description">
-      <div class="row text-center">
-        <div class="col-md-auto">
-          <h1> Bootstrap 5 Jumbotron example </h1>
-          <p>
+    <div class="container-description">
+      <div>
+        <div>
+          <h1 class="display-1 fw-bold">Mobile App Landing Page</h1>
+          <p class="fs-4">
             In Bootstrap 3, a jumbotron was introduced as a large, padded box for highlighting special content or
             information. Now, jumbotrons does not supported by Bootstrap 5 version. We can achieve the same result with
             an
@@ -68,363 +60,375 @@
         </div>
       </div>
     </div>
-    <div class="container text-center">
-      <button class="btn rounded-pill btn-download-filled bg-danger text-white" type="button"><i class="fa-brands fa-google-play"
-        style="color: #ffffff;"></i>DOWNLOAD</button>
-      <button class="btn rounded-pill btn-download-filled bg-danger text-white" type="button"><i class="fa-brands fa-google-play"
-          style="color: #ffffff;"></i>DOWNLOAD</button>
+    <div class="container-buttons-download">
+     <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white fw-bold" type="button"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></i>DOWNLOAD</button>
+      <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white fw-bold bg-gradient" type="button"><i
+        class="fa-brands fa-google-play" style="color: #ffffff;"></i>DOWNLOAD</button></a> 
     </div>
     <div class="container-circles">
       <div class="container-white-circle-left">
         <img src="../src/assets/figures/decorative-blue-circle.svg" class="blue-circle">
       </div>
       <div class="container-img-phone">
-        <img src="../src/assets/img/header-iphone.png">
+        <img src="../src/assets/img/header-iphone.png" class="hithere">
       </div>
       <div class="container-white-circle-right">
         <img src="../src/assets/img/decorative-half-white-circle-right.png" class="white-circle">
       </div>
     </div>
 
-    <div class="container">
-      <div class="row justify-content-center text-center g-5 mt-4">
-        <div class="col-md-auto text-center content-fa-justify">
-          <div class="content-fa-size-bg content-fa-size-bg-goals">
-            <i class="fa-solid fa-users fa-2x" style="color: #ac84f0;"></i>
-          </div>
-            <h4 class="mt-4">Identify Goals</h4>        
+    <div class="container-icons">
+      <div class="content-fa-justify gelatine">
+        <div class="content-fa-size-bg bg-light-purple">
+          <i class="fa-solid fa-users fa-2x" style="color: #ac84f0;"></i>
         </div>
-        <div class="col-md-auto text-center content-fa-justify">
-          <div class="content-fa-size-bg content-fa-size-bg-situation">
-            <i class="fa-sharp fa-solid fa-code fa-2x" style="color: #18c389;"></i>
-          </div>
-            <h4 class="mt-4">Situation Analysis</h4>        
-        </div>
-        <div class="col-md-auto text-center content-fa-justify">
-          <div class="content-fa-size-bg content-fa-size-bg-task">
-            <i class="fa-solid fa-gear fa-2x" style="color: #ff4b63;"></i>
-          </div>
-            <h4 class="mt-4">Task Settings</h4>        
-        </div>
-        <div class="col-md-auto text-center content-fa-justify">
-          <div class="content-fa-size-bg content-fa-size-bg-social">
-            <i class="fa-solid fa-comments fa-2x" style="color: #ffaa11;"></i>
-          </div>
-            <h4 class="mt-4">Social Interaction</h4>        
-        </div>
-      <div class="row justify-content-center">
-        <div class="col-md-auto text-center content-fa-justify mt-5 mb-5">
-          <div class="content-fa-size-bg content-fa-size-bg-rocket">
-            <i class="fa-solid fa-rocket fa-2x" style="color: #46b0e5;"></i>
-          </div>
-            <h4 class="mt-4">Get Things Done</h4>        
-        </div>
+        <h4 class="mt-4 fw-bold">Identify Goals</h4>
       </div>
-    </div>
+      <div class="content-fa-justify gelatine">
+        <div class="content-fa-size-bg bg-light-green">
+          <i class="fa-sharp fa-solid fa-code fa-2x" style="color: #18c389;"></i>
+        </div>
+        <h4 class="mt-4 fw-bold">Situation Analysis</h4>
+      </div>
+      <div class="content-fa-justify gelatine">
+        <div class="content-fa-size-bg bg-light-red">
+          <i class="fa-solid fa-gear fa-2x" style="color: #ff4b63;"></i>
+        </div>
+        <h4 class="mt-4 fw-bold">Task Settings</h4>
+      </div>
+      <div class="content-fa-justify gelatine">
+        <div class="content-fa-size-bg bg-light-yellow">
+          <i class="fa-solid fa-comments fa-2x" style="color: #ffaa11;"></i>
+        </div>
+        <h4 class="mt-4 fw-bold">Social Interaction</h4>
+      </div>
+
+      <div class="content-fa-justify gelatine">
+        <div class="content-fa-size-bg bg-light-blue">
+          <i class="fa-solid fa-rocket fa-2x" style="color: #46b0e5;"></i>
+        </div>
+        <h4 class="mt-4 fw-bold">Get Things Done</h4>
+      </div>
+
 
   </header>
 
-  <main>  
+  <main>
 
-    <section class="mt-5" id="features">
-      <div class="container description-container">
-        <div class="row justify-content-center">
-          <div class="col-md-7 description-container-content text-center">
-            <img src="../src/assets/img/description-1-app.png" class="img-fluid description-container-content-img">
+    <section id="description">
+      <div class="description-container">
+
+        <div class="description-container-row">
+
+          <div class="description-container-section-left">
+            <img src="../src/assets/img/description-1-app.png" class="description-container-content-img">
           </div>
-          <div class="col-md-5 text-left">
-            <h2>Organize Your Time And Start Getting Results</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore numquam laboriosam harum cumque
+
+          <div class="description-container-section-right">
+            <h2 class="display-5 fw-bold">Organize Your Time And Start Getting Results</h2>
+            <p class="fs-6 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore numquam laboriosam harum cumque
               odit hic, vel praesentium totam pariatur?</p>
-            <ul class="list-group-style">
-              <li>An item</li>
-              <li>A second item</li>
-              <li>A third item</li>
-              <li>A fourth item</li>
-              <li>And a fifth one</li>
+            <ul class="list-group-style p-4">
+              <li class="fs-6 fw-semibold">An item</li>
+              <li class="fs-6 fw-semibold">A second item</li>
+              <li class="fs-6 fw-semibold">A third item</li>
+              <li class="fs-6 fw-semibold">A fourth item</li>
+              <li class="fs-6 fw-semibold">And a fifth one</li>
             </ul>
-            <div class="container my-5">
-              <button class="btn btn-danger rounded-pill" type="button">LIGHTBOX</button>
+            <div>
+              <a href="https://factoriaf5.org/"><button class="btn btn-danger rounded-pill fw-bold fs-5 bg-gradient" type="button">LIGHTBOX</button></a>
             </div>
           </div>
-        </div>
-        <div class="row bg-secondary mt-7 align-items-center justify-content-center description-container-bottom">          
-          <div class="col-md-5">
-            <div class="description-container-buttons-top">
-              <button class="btn-description" type="button"><i class="fa-regular fa-clock" style="color: #747475;"></i></i>Schedule</button>
-              <button class="btn-description" type="button"><i class="fa-solid fa-list" style="color: #747475;"></i>Tracking</button>
-              <button class="btn-description mt-2" type="button"><i class="fa-solid fa-calendar-days" style="color: #747475;"></i>Organize</button>
-            </div>
-            <div class="mt-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore numquam laboriosam harum cumque
-                odit hic, vel praesentium totam pariatur?</p>
-              <ul class="list-group-style">
-                <li>An item</li>
-                <li>A second item</li>
-                <li>A third item</li>
-                <li>A fourth item</li>
-                <li>And a fifth one</li>
-              </ul>              
-              <div class="container">
-                <button class="btn btn-danger rounded-pill description-container-buttons-bottom" type="button">TERMS</button>
-                <button class="btn btn-outline-dark rounded-pill description-container-buttons-bottom" type="button">PRIVACY</button>
 
+        </div>
+
+        <div>
+
+          <div class="description-container-row bg-blue">
+
+            <div class="description-container-section-left description-container-section-left-bottom">
+
+              <div class="description-container-buttons-top">
+                <a href="https://factoriaf5.org/"><button class="btn-description fs-5 fw-bold bg-gradient" type="button"><i class="fa-regular fa-clock p-2"
+                    style="color: #747475;"></i></i>Schedule</button></a>
+                    <a href="https://factoriaf5.org/"><button class="btn-description fs-5 fw-bold bg-gradient" type="button"><i class="fa-solid fa-list p-2"
+                    style="color: #747475;"></i>Tracking</button></a>
+                    <a href="https://factoriaf5.org/"><button class="btn-description mt-2 fs-5 fw-bold bg-gradient" type="button"><i class="fa-solid fa-calendar-days p-2"
+                    style="color: #747475;"></i>Organize</button> <a href="https://factoriaf5.org/"></a>
+              </div>
+
+              <div class="description-container-text">
+                <p class="fs-6 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore numquam laboriosam harum
+                  cumque
+                  odit hic, vel praesentium totam pariatur?</p>
+                <ul class="list-group-style">
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>An item</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A second item</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A third item</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A fourth item</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>And a fifth one</li>
+                </ul>
+                <div>
+                  <a href="https://factoriaf5.org/"><button class="btn btn-danger rounded-pill description-container-buttons-bottom  m-2 fw-bold fs-5 bg-gradient"
+                    type="button">TERMS</button></a>
+                    <a href="https://factoriaf5.org/"><button class="btn btn-outline-dark rounded-pill description-container-buttons-bottom fw-bold fs-5 bg-gradient"
+                    type="button">PRIVACY</button></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-7 description-container-content text-center d-flex align-items-center">
-            <div class="mx-auto my-auto">
-              <img src="../src/assets/img/description-2-app.png" class="img-fluid description-container-content-img">
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    
 
-    <section id="screens mt-5 justify-content-center">
-      <div class="row row-cols-1 row-cols-md-6 justify-content-center">
-        <div class="col justify-content-center">
-          <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header text-center">
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-            </div>
-            <div class="card-body text-center">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <h5 class="card-title">Light card title</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header text-center">
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-            </div>
-            <div class="card-body text-center">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <h5 class="card-title">Light card title</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header text-center">
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-            </div>
-            <div class="card-body text-center">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <h5 class="card-title">Light card title</h5>
+            <div class="description-container-section-right">
+              <img src="../src/assets/img/description-2-app.png" class="description-container-content-img">
             </div>
           </div>
         </div>
       </div>
-
-  <div class="container bg-white mb-3 container-logos">
-  <div class="row container-logos-content">
-    <div class="col-md text-center mx-auto my-3">
-      <img src="../src/assets/logo/customer-logo-1.png" class="img-fluid">
-    </div>
-    <div class="col-md text-center mx-auto my-3">
-      <img src="../src/assets/logo/customer-logo-2.png" class="img-fluid">
-    </div>
-    <div class="col-md text-center mx-auto my-3">
-      <img src="../src/assets/logo/customer-logo-3.png" class="img-fluid">
-    </div>
-    <div class="col-md text-center mx-auto my-3">
-      <img src="../src/assets/logo/customer-logo-4.png" class="img-fluid">
-    </div>
-  </div>
-  <div class="row text-center">
-    <div class="col-md mx-auto my-3">
-      <img src="../src/assets/logo/customer-logo-5.png" class="img-fluid">
-    </div>
-  </div>
-</div>
-      
-
-        <div class="row row-cols-1 row-cols-md-6 justify-content-center">
-          <div class="col">
-            <div class="card border-light mb-3" style="max-width: 18rem;">
-              <div class="card-header text-center">
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              </div>
-              <div class="card-body text-center">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <h5 class="card-title">Light card title</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-light mb-3" style="max-width: 18rem;">
-              <div class="card-header text-center">
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              </div>
-              <div class="card-body text-center">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <h5 class="card-title">Light card title</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-light mb-3" style="max-width: 18rem;">
-              <div class="card-header text-center">
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-                <i class="fa-solid fa-star" style="color: #ffaa11;"></i>
-              </div>
-              <div class="card-body text-center">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <h5 class="card-title">Light card title</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container bg-secondary">
-          <div class="row justify-content-center text-center g-5 mt-4">
-            <div class="col-md-auto text-center content-fa-justify">
-              <div class="content-fa-size-bg content-fa-size-bg-goals">
-                <i class="fa-solid fa-users fa-2x" style="color: #ac84f0;"></i>
-              </div>
-                <h4 class="mt-4">Identify Goals</h4>        
-            </div>
-            <div class="col-md-auto text-center content-fa-justify">
-              <div class="content-fa-size-bg content-fa-size-bg-situation">
-                <i class="fa-sharp fa-solid fa-code fa-2x" style="color: #18c389;"></i>
-              </div>
-                <h4 class="mt-4">Situation Analysis</h4>        
-            </div>
-            <div class="col-md-auto text-center content-fa-justify">
-              <div class="content-fa-size-bg content-fa-size-bg-task">
-                <i class="fa-solid fa-gear fa-2x" style="color: #ff4b63;"></i>
-              </div>
-                <h4 class="mt-4">Task Settings</h4>        
-            </div>
-            <div class="col-md-auto text-center content-fa-justify">
-              <div class="content-fa-size-bg content-fa-size-bg-social">
-                <i class="fa-solid fa-comments fa-2x" style="color: #ffaa11;"></i>
-              </div>
-                <h4 class="mt-4">Social Interaction</h4>        
-            </div>
-            <div class="col-md-auto text-center content-fa-justify">
-              <div class="content-fa-size-bg content-fa-size-bg-rocket">
-                <i class="fa-solid fa-rocket fa-2x" style="color: #46b0e5;"></i>
-              </div>
-                <h4 class="mt-4">Get Things Done</h4>        
-            </div>
-          </div>
-        </div>
-
-        
     </section>
 
-    <section>
-      <div class="container" id="article-details">
-        <div class="row">
-          <img src="../src/assets/figures/decorative-white-circle.svg" alt="white circle" width="20" height="20">
-          <img src="../src/assets/figures/decorative-yellow-circle.svg" alt="yellow circle" width="20" height="20">
-          <div class="d-flex justify-content-center">
-            <img src="../src/assets/img/download-iphone.png" alt="Logo" width="1072" height="612"
-              class="d-inline-block align-text-top img-fluid">
+    <section id="features">
+
+      <div class="container-cards">
+
+        <div class="container-cards-row">
+
+          <div class="container-card">
+            <div class="container-card-header">
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+            </div>
+            <div class="container-card-text">
+              <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+            </div>
           </div>
+          <div class="container-card">
+            <div class="container-card-header">
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+            </div>
+            <div class="container-card-text">
+              <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="container-card-header">
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+            </div>
+            <div class="container-card-text">
+              <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-logos">
+          <div class="container-logos-content">
+            <div class="text-center container-logo-img">
+              <img src="../src/assets/logo/customer-logo-1.png">
+            </div>
+            <div class="text-center container-logo-img">
+              <img src="../src/assets/logo/customer-logo-2.png">
+            </div>
+            <div class="text-center container-logo-img">
+              <img src="../src/assets/logo/customer-logo-3.png">
+            </div>
+            <div class="text-center container-logo-img">
+              <img src="../src/assets/logo/customer-logo-4.png">
+            </div>
+            <div class="text-center container-logo-img">
+              <img src="../src/assets/logo/customer-logo-5.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="container-cards-row">
+
+          <div class="container-card">
+            <div class="container-card-header">
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+            </div>
+            <div class="container-card-text">
+              <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="container-card-header">
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+            </div>
+            <div class="container-card-text">
+              <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+            </div>
+          </div>
+          <div class="container-card">
+            <div class="container-card-header">
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+              <i class="fa-solid fa-star fa-2x" style="color: #ffaa11;"></i>
+            </div>
+            <div class="container-card-text">
+              <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-icons-bottom bg-blue">
+          <div class="gelatine container-box">
+            <div class="container-box-icon">
+              <i class="fa-solid fa-users fa-5x" style="color: #ac84f0;"></i>
+            </div>
+            <h4 class="display-3 fw-bold">231</h4>
+            <p class="fs-5">Happy Users</p>
+          </div>
+          <div class="gelatine container-box">
+            <div class="container-box-icon">
+              <i class="fa-sharp fa-solid fa-code fa-5x" style="color: #18c389;"></i>
+            </div>
+            <h4 class="display-3 fw-bold">385</h4>
+            <p class="fs-5">Issues Solved</p>
+          </div>
+          <div class=" gelatine container-box">
+            <div class="container-box-icon">
+              <i class="fa-solid fa-gear fa-5x" style="color: #ff4b63;"></i>
+            </div>
+            <h4 class="display-3 fw-bold">159</h4>
+            <p class="fs-5">Good Reviews</p>
+          </div>
+          <div class="gelatine container-box">
+            <div class="container-box-icon">
+              <i class="fa-solid fa-comments fa-5x" style="color: #ffaa11;"></i>
+            </div>
+            <h4 class="display-3 fw-bold">127</h4>
+            <p class="fs-5">Case Studies</p>
+          </div>
+          <div class="gelatine container-box">
+            <div class="container-box-icon">
+              <i class="fa-solid fa-rocket fa-5x" style="color: #46b0e5;"></i>
+            </div>
+            <h4 class="display-3 fw-bold">211</h4>
+            <p class="fs-5">Orders Received</p>
+          </div>
+        </div>
+    </section>
+
+    <section id="screens">
+      <div class="container-screens" id="article-details">
+        <div class="container-circles">
+          <div class="container-left-white-circle">
+          <div class="container-white-circle-left-bottom">
+            <img src="../src/assets/figures/decorative-yellow-circle.svg" class="yellow-circle">
+          </div>
+        </div>
+          <div class="container-img-phone">
+            <img src="../src/assets/img/download-iphone.png" alt="Logo" class="hithere">
+          </div>
+          <div>
           <img src="../src/assets/figures/decorative-green-diamond.svg" alt="green diamond" width="20" height="20">
-          <img src="../src/assets/figures/decorative-white-circle.svg" alt="white circle" width="20" height="20">
-          <img src="../src/assets/figures/decorative-blue-circle.svg" alt="blue circle" width="20" height="20">
-          <p>
-            In Bootstrap 3, a jumbotron was introduced as a large, padded box for highlighting special content or
-            information. Now, jumbotrons does not supported by Bootstrap 5 version. We can achieve the same result with
-            an
-            element, special helper classes, and a color class.
+        </div>
+        <div class="container-white-circle-right-bottom">
+          <div class="container-blue-circle">
+          <img src="../src/assets/figures/decorative-blue-circle.svg"  class="blue-circle-bottom" >
+        </div>
+        </div>
+        </div>
+          <p class="container-paragraph fs-4 fw-semibold">In Bootstrap 3, a jumbotron was introduced as a large, padded box for highlighting special content or information. Now, jumbotrons does not supported by Bootstrap 5 version. We can achieve the same result with  an element, special helper classes, and a color class.
           </p>
         </div>
-        <div class="container text-center">
-          <button class="btn btn-danger" type="button">Button</button>
-          <button class="btn btn-danger" type="button">Button</button>
-        </div>
+        <div class="mb-5 container-bottom-download">
+          <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white m-2 bg-gradient" type="button"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></i>DOWNLOAD</button>
+           <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white bg-gradient" type="button"><i
+             class="fa-brands fa-google-play" style="color: #ffffff;"></i>DOWNLOAD</button></a> 
+         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-primary-color text-center text-lg-start bg-light">
-    <div class="container my-5">
-      <div class="container p-4">
-        <div class="row my-4">
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Contact Info</h5>
-            <ul class="list-unstyled">
-              <li>
-                <p><i class="fas fa-map-marker-alt pe-2"></i>22 innovation Street, CA, US</p>
-              </li>
-              <li>
-                <p><i class="fas fa-envelope pe-2 mb-0"></i>office@syncmobile.com</p>
-              </li>
-              <li>
-                <p><i class="fas fa-phone pe-2"></i>+44 376 945 23</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Value links</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">Terms & Conditions</li>
-              <li class="mb-2">Privacy Policy</li>
-              <li class="mb-2">Article Details</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Other Apps</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">Scientific Calculator</li>
-              <li class="mb-2">Advanced Timer</li>
-              <li class="mb-2">Music Store</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <div class="container">
-              <a class="btn btn-outline-dark btn-floating bg-body-secondary rounded-circle border-0" href="#!"
-                role="button"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-              <a class="btn btn-outline-dark btn-floating bg-body-secondary rounded-circle border-0" href="#!"
-                role="button"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-              <a class="btn btn-outline-dark btn-floating bg-body-secondary rounded-circle border-0" href="#!"
-                role="button"><i class="fa-brands fa-pinterest-p" style="color: #ffffff;"></i></a>
-              <a class="btn btn-outline-dark btn-floating  bg-body-secondary rounded-circle border-0" href="#!"
-                role="button"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-            </div>
-          </div>
+  <footer>
+
+    <div class="container-footer-top">
+      <div class="container-footer-top-left">
+
+        <div class="container-footer-list">
+          <h5 class="text-uppercase mb-4  fw-bolder">Contact Info</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2 bounce"></i>22 innovation Street, CA, US</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0 bounce"></i>office@syncmobile.com</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2 bounce"></i>+44 376 945 23</p>
+            </li>
+          </ul>
         </div>
+
+        <div class="container-footer-list">
+          <h5 class="text-uppercase mb-4 fw-bolder">Value links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">Terms & Conditions</li>
+            <li class="mb-2">Privacy Policy</li>
+            <li class="mb-2">Article Details</li>
+          </ul>
+        </div>
+
+        <div class="container-footer-list">
+          <h5 class="text-uppercase mb-4 fw-bolder">Other Apps</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">Scientific Calculator</li>
+            <li class="mb-2">Advanced Timer</li>
+            <li class="mb-2">Music Store</li>
+          </ul>
+        </div>
+
       </div>
+
+      <div class="container-footer-top-right">
+        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
+          role="button"><i class="fa-brands fa-facebook-f fa-2x" style="color: #ffffff;"></i></a>
+        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
+          role="button"><i class="fa-brands fa-twitter fa-2x" style="color: #ffffff;"></i></a>
+        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
+          role="button"><i class="fa-brands fa-pinterest-p fa-2x" style="color: #ffffff;"></i></a>
+        <a class="btn btn-outline-dark btn-floating  bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
+          role="button"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+      </div>
+
     </div>
-    <i class="fa-solid fa-rocket" style="color: #46b0e5;"></i>
-    <div class="text-center p-3 bg-light">
-      Copyright © 2020 Copyright: Inovatik - All rights reserved
+
+    <div class="container-footer-bottom">
+    <p>Copyright © 2020 Copyright: Inovatik - All rights reserved</p>
     </div>
   </footer>
 
