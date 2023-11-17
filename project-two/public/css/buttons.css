@@ -1,42 +1,42 @@
 .btn-download-filled {
-    width: 185px;
-    max-height: 80px;
-    background-color: #FF4B63;
-    border: none;
-    color: #FFFF;
-  }
-  
-  .btn-description {
-    width: 150px;
-    height: 45px;
-    background-color: #FEF9FD;
-    border: none;
-  }
+  width: 185px;
+  max-height: 80px;
+  background-color: #FF4B63;
+  border: none;
+  color: #FFFF;
+}
 
-  .btn-description:hover {
-    background-color: #8F56E3;
-    color: #ffff;
-    transition: all 600ms ease;
-  }
+.btn-description {
+  width: 150px;
+  height: 45px;
+  background-color: #FEF9FD;
+  border: none;
+}
 
-  .btn-download{
-    display: flex;
-    border: 3px solid #FF4B63;
-    background-color: #f7fafd;
-    color: #FF4B63;
-    padding: 5px 20px;
-    border-radius: 20px;
-    font-size: 1.25rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
+.btn-description:hover {
+  background-color: #8F56E3;
+  color: #ffff;
+  transition: all 600ms ease;
+}
 
-  .btn-download:hover{
-    background-color: #FF4B63;
-    color: #FFFFFF;
-    transition: ease-in-out 600ms;
-  }
+.btn-download {
+  display: flex;
+  border: 3px solid #FF4B63;
+  background-color: #f7fafd;
+  color: #FF4B63;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
 
-  .btn-gradient:hover {
-    filter: brightness(1.2);
+.btn-download:hover {
+  background-color: #FF4B63;
+  color: #FFFFFF;
+  transition: ease-in-out 600ms;
+}
+
+.btn-gradient:hover {
+  filter: brightness(1.2);
 }

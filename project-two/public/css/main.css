@@ -60,9 +60,10 @@ section {
   padding: 0 170px;
 }
 
-.description-container-section-right h2{
+.description-container-section-right h2 {
   width: 500px;
 }
+
 .description-container-section-right p {
   width: 500px;
 }
@@ -131,11 +132,11 @@ section {
 }
 
 .list-group-style i {
-margin-right: 10px;
+  margin-right: 10px;
 }
 
-.container-logo img{
-width: 250px;
+.container-logo img {
+  width: 250px;
 }
 
 .description-container-bottom {
@@ -178,7 +179,7 @@ width: 250px;
   /* Ajuste a posição conforme necessário */
   width: 40%;
   /* Ajuste a largura conforme necessário */
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   /* Cor e largura da borda */
   margin: 0 auto;
 }
@@ -186,11 +187,11 @@ width: 250px;
 .container-card-text {
   margin-top: 10%;
   margin-bottom: 10%;
-  width: 380px; 
+  width: 380px;
   height: auto;
 }
 
-.container-icons-bottom{
+.container-icons-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +200,7 @@ width: 250px;
   height: 400px;
 }
 
-.container-box{
+.container-box {
   width: 200px;
   height: 200px;
   display: flex;
@@ -214,19 +215,20 @@ width: 250px;
 }
 
 
-.container-screens{
+.container-screens {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.yellow-circle{
+
+.yellow-circle {
   width: 50px;
   height: 50px;
   margin-right: -5%;
 }
 
-.container-left-white-circle{
+.container-left-white-circle {
   display: flex;
   flex-direction: column;
   height: 855px;
@@ -237,7 +239,7 @@ width: 250px;
   background-image: url(../../src/assets/img//decorative-half-white-circle-left.png);
   width: 215px;
   height: 430px;
-  background-size:contain;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -249,7 +251,7 @@ width: 250px;
   background-image: url(../../src/assets/img//decorative-half-white-circle-right.png);
   width: 215px;
   height: 430px;
-  background-size:contain;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -257,7 +259,7 @@ width: 250px;
   justify-content: start;
 }
 
-.blue-circle-bottom{
+.blue-circle-bottom {
   width: 80px;
   height: 100%;
 }
@@ -268,16 +270,16 @@ width: 250px;
   margin-left: -15%;
 }
 
-#screens{
+#screens {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container-paragraph{
+
+.container-paragraph {
   max-width: 1200px;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-

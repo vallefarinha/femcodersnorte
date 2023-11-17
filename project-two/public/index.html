@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sync</title>
   <link rel="stylesheet" href="../public/css/main.css">
   <link rel="stylesheet" href="../public/css/header.css">
   <link rel="stylesheet" href="../public/css/custom.css">
@@ -13,16 +13,17 @@
   <link rel="stylesheet" href="../public/css/animations.css">
   <link rel="stylesheet" href="../public/css/buttons.css">
   <link rel="stylesheet" href="../public/css/icons.css">
-  <link rel="stylesheet" href="../public/css/footer.css">  
+  <link rel="stylesheet" href="../public/css/footer.css">
   <link rel="stylesheet" href="../public/css/mediaqueries.css">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../src/sass/custom.scss">
 </head>
 
 <body>
-  <header>   
-    <nav class="navbar fixed-top" id="top">
-      <div class="logo" >
+  <header>
+
+    <nav class="navbar fixed-top">
+      <div class="logo">
         <a href="#top"><img src="../src/assets/logo/logo.svg" alt="Logo"></a>
       </div>
       <div class="menu">
@@ -38,19 +39,23 @@
               <a href="#">SERVIÇO</a>
             </div>
           </li>
-          <a href="https://factoriaf5.org/"><li><button type="button" class="rounded-pill btn-download fw-bold">DOWNLOAD</button></li></a>
+          <a href="https://factoriaf5.org/">
+            <li><button type="button" class="rounded-pill btn-download fw-bold">DOWNLOAD</button></li>
+          </a>
         </ul>
-        
+
       </div>
     </nav>
-    <div class="container-figures">
+
+    <div class="container-figures" id="top">
       <img src="../src/assets/figures/decorative-green-diamond.svg" alt="Logo" width="16" max-height="16">
       <img src="../src/assets/figures/decorative-yellow-circle.svg" alt="Logo" width="16" max-height="16">
     </div>
+
     <div class="container-description">
       <div>
         <div>
-          <h1 class="display-1 fw-bold">Mobile App Landing Page</h1>
+          <h1 class="display-1">Mobile App Landing Page</h1>
           <p class="fs-4">
             In Bootstrap 3, a jumbotron was introduced as a large, padded box for highlighting special content or
             information. Now, jumbotrons does not supported by Bootstrap 5 version. We can achieve the same result with
@@ -60,11 +65,16 @@
         </div>
       </div>
     </div>
+
     <div class="container-buttons-download">
-     <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white fw-bold" type="button"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></i>DOWNLOAD</button>
-      <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white fw-bold bg-gradient" type="button"><i
-        class="fa-brands fa-google-play" style="color: #ffffff;"></i>DOWNLOAD</button></a> 
+      <a href="https://factoriaf5.org/"><button
+          class="btn rounded-pill btn-download-filled bg-danger text-white fw-bold" type="button"><i
+            class="fa-brands fa-apple" style="color: #ffffff;"></i></i>DOWNLOAD</button>
+        <a href="https://factoriaf5.org/"><button
+            class="btn rounded-pill btn-download-filled bg-danger text-white fw-bold bg-gradient" type="button"><i
+              class="fa-brands fa-google-play" style="color: #ffffff;"></i>DOWNLOAD</button></a>
     </div>
+
     <div class="container-circles">
       <div class="container-white-circle-left">
         <img src="../src/assets/figures/decorative-blue-circle.svg" class="blue-circle">
@@ -126,7 +136,8 @@
 
           <div class="description-container-section-right">
             <h2 class="display-5 fw-bold">Organize Your Time And Start Getting Results</h2>
-            <p class="fs-6 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore numquam laboriosam harum cumque
+            <p class="fs-6 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore numquam
+              laboriosam harum cumque
               odit hic, vel praesentium totam pariatur?</p>
             <ul class="list-group-style p-4">
               <li class="fs-6 fw-semibold">An item</li>
@@ -136,7 +147,8 @@
               <li class="fs-6 fw-semibold">And a fifth one</li>
             </ul>
             <div>
-              <a href="https://factoriaf5.org/"><button class="btn btn-danger rounded-pill fw-bold fs-5 bg-gradient" type="button">LIGHTBOX</button></a>
+              <a href="https://factoriaf5.org/"><button class="btn btn-danger rounded-pill fw-bold fs-5 bg-gradient"
+                  type="button">LIGHTBOX</button></a>
             </div>
           </div>
 
@@ -149,30 +161,40 @@
             <div class="description-container-section-left description-container-section-left-bottom">
 
               <div class="description-container-buttons-top">
-                <a href="https://factoriaf5.org/"><button class="btn-description fs-5 fw-bold bg-gradient" type="button"><i class="fa-regular fa-clock p-2"
-                    style="color: #747475;"></i></i>Schedule</button></a>
-                    <a href="https://factoriaf5.org/"><button class="btn-description fs-5 fw-bold bg-gradient" type="button"><i class="fa-solid fa-list p-2"
-                    style="color: #747475;"></i>Tracking</button></a>
-                    <a href="https://factoriaf5.org/"><button class="btn-description mt-2 fs-5 fw-bold bg-gradient" type="button"><i class="fa-solid fa-calendar-days p-2"
-                    style="color: #747475;"></i>Organize</button> <a href="https://factoriaf5.org/"></a>
+                <a href="https://factoriaf5.org/"><button class="btn-description fs-5 fw-bold bg-gradient"
+                    type="button"><i class="fa-regular fa-clock p-2"
+                      style="color: #747475;"></i></i>Schedule</button></a>
+                <a href="https://factoriaf5.org/"><button class="btn-description fs-5 fw-bold bg-gradient"
+                    type="button"><i class="fa-solid fa-list p-2" style="color: #747475;"></i>Tracking</button></a>
+                <a href="https://factoriaf5.org/"><button class="btn-description mt-2 fs-5 fw-bold bg-gradient"
+                    type="button"><i class="fa-solid fa-calendar-days p-2" style="color: #747475;"></i>Organize</button>
+                  <a href="https://factoriaf5.org/"></a>
               </div>
 
               <div class="description-container-text">
-                <p class="fs-6 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore numquam laboriosam harum
+                <p class="fs-6 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore
+                  numquam laboriosam harum
                   cumque
                   odit hic, vel praesentium totam pariatur?</p>
                 <ul class="list-group-style">
-                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>An item</li>
-                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A second item</li>
-                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A third item</li>
-                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A fourth item</li>
-                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>And a fifth one</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>An item
+                  </li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A
+                    second item</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A third
+                    item</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>A
+                    fourth item</li>
+                  <li class="fs-6 fw-semibold"><i class="fa-regular fa-square-check" style="color: #18c389;"></i>And a
+                    fifth one</li>
                 </ul>
                 <div>
-                  <a href="https://factoriaf5.org/"><button class="btn btn-danger rounded-pill description-container-buttons-bottom  m-2 fw-bold fs-5 bg-gradient"
-                    type="button">TERMS</button></a>
-                    <a href="https://factoriaf5.org/"><button class="btn btn-outline-dark rounded-pill description-container-buttons-bottom fw-bold fs-5 bg-gradient"
-                    type="button">PRIVACY</button></a>
+                  <a href="https://factoriaf5.org/"><button
+                      class="btn btn-danger rounded-pill description-container-buttons-bottom  m-2 fw-bold fs-5 bg-gradient"
+                      type="button">TERMS</button></a>
+                  <a href="https://factoriaf5.org/"><button
+                      class="btn btn-outline-dark rounded-pill description-container-buttons-bottom fw-bold fs-5 bg-gradient"
+                      type="button">PRIVACY</button></a>
                 </div>
               </div>
             </div>
@@ -202,7 +224,7 @@
             <div class="container-card-text">
               <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
-                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+              <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
             </div>
           </div>
           <div class="container-card">
@@ -216,7 +238,7 @@
             <div class="container-card-text">
               <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
-                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+              <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
             </div>
           </div>
           <div class="container-card">
@@ -230,7 +252,7 @@
             <div class="container-card-text">
               <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
-                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+              <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
             </div>
           </div>
         </div>
@@ -269,7 +291,7 @@
             <div class="container-card-text">
               <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
-                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+              <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
             </div>
           </div>
           <div class="container-card">
@@ -283,7 +305,7 @@
             <div class="container-card-text">
               <p class="fs-4 fst-italic"> Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
-                <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
+              <h5 class="container-card-name fw-bold fs-3">Light card title</h5>
             </div>
           </div>
           <div class="container-card">
@@ -346,30 +368,35 @@
       <div class="container-screens" id="article-details">
         <div class="container-circles">
           <div class="container-left-white-circle">
-          <div class="container-white-circle-left-bottom">
-            <img src="../src/assets/figures/decorative-yellow-circle.svg" class="yellow-circle">
+            <div class="container-white-circle-left-bottom">
+              <img src="../src/assets/figures/decorative-yellow-circle.svg" class="yellow-circle">
+            </div>
           </div>
-        </div>
           <div class="container-img-phone">
             <img src="../src/assets/img/download-iphone.png" alt="Logo" class="hithere">
           </div>
           <div>
-          <img src="../src/assets/figures/decorative-green-diamond.svg" alt="green diamond" width="20" height="20">
+            <img src="../src/assets/figures/decorative-green-diamond.svg" alt="green diamond" width="20" height="20">
+          </div>
+          <div class="container-white-circle-right-bottom">
+            <div class="container-blue-circle">
+              <img src="../src/assets/figures/decorative-blue-circle.svg" class="blue-circle-bottom">
+            </div>
+          </div>
         </div>
-        <div class="container-white-circle-right-bottom">
-          <div class="container-blue-circle">
-          <img src="../src/assets/figures/decorative-blue-circle.svg"  class="blue-circle-bottom" >
-        </div>
-        </div>
-        </div>
-          <p class="container-paragraph fs-4 fw-semibold">In Bootstrap 3, a jumbotron was introduced as a large, padded box for highlighting special content or information. Now, jumbotrons does not supported by Bootstrap 5 version. We can achieve the same result with  an element, special helper classes, and a color class.
-          </p>
-        </div>
-        <div class="mb-5 container-bottom-download">
-          <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white m-2 bg-gradient" type="button"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></i>DOWNLOAD</button>
-           <a href="https://factoriaf5.org/"><button class="btn rounded-pill btn-download-filled bg-danger text-white bg-gradient" type="button"><i
-             class="fa-brands fa-google-play" style="color: #ffffff;"></i>DOWNLOAD</button></a> 
-         </div>
+        <p class="container-paragraph fs-4 fw-semibold">In Bootstrap 3, a jumbotron was introduced as a large, padded
+          box for highlighting special content or information. Now, jumbotrons does not supported by Bootstrap 5
+          version. We can achieve the same result with an element, special helper classes, and a color class.
+        </p>
+      </div>
+      <div class="mb-5 container-bottom-download">
+        <a href="https://factoriaf5.org/"><button
+            class="btn rounded-pill btn-download-filled bg-danger text-white m-2 bg-gradient" type="button"><i
+              class="fa-brands fa-apple" style="color: #ffffff;"></i></i>DOWNLOAD</button>
+          <a href="https://factoriaf5.org/"><button
+              class="btn rounded-pill btn-download-filled bg-danger text-white bg-gradient" type="button"><i
+                class="fa-brands fa-google-play" style="color: #ffffff;"></i>DOWNLOAD</button></a>
+      </div>
       </div>
     </section>
   </main>
@@ -415,20 +442,24 @@
       </div>
 
       <div class="container-footer-top-right">
-        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
-          role="button"><i class="fa-brands fa-facebook-f fa-2x" style="color: #ffffff;"></i></a>
-        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
-          role="button"><i class="fa-brands fa-twitter fa-2x" style="color: #ffffff;"></i></a>
-        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
-          role="button"><i class="fa-brands fa-pinterest-p fa-2x" style="color: #ffffff;"></i></a>
-        <a class="btn btn-outline-dark btn-floating  bg-body-secondary bounce rounded-circle border-0" href="https://femcoders.factoriaf5.org/"
-          role="button"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0"
+          href="https://femcoders.factoriaf5.org/" role="button"><i class="fa-brands fa-facebook-f fa-2x"
+            style="color: #ffffff;"></i></a>
+        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0"
+          href="https://femcoders.factoriaf5.org/" role="button"><i class="fa-brands fa-twitter fa-2x"
+            style="color: #ffffff;"></i></a>
+        <a class="btn btn-outline-dark btn-floating bg-body-secondary bounce rounded-circle border-0"
+          href="https://femcoders.factoriaf5.org/" role="button"><i class="fa-brands fa-pinterest-p fa-2x"
+            style="color: #ffffff;"></i></a>
+        <a class="btn btn-outline-dark btn-floating  bg-body-secondary bounce rounded-circle border-0"
+          href="https://femcoders.factoriaf5.org/" role="button"><i class="fa-brands fa-instagram fa-2x"
+            style="color: #ffffff;"></i></a>
       </div>
 
     </div>
 
     <div class="container-footer-bottom">
-    <p>Copyright © 2020 Copyright: Inovatik - All rights reserved</p>
+      <p>Copyright © 2020 Copyright: Inovatik - All rights reserved</p>
     </div>
   </footer>
 

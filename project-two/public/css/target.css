@@ -1,15 +1,14 @@
-
-
 meunu a:hover,
 menu a:focus,
 menu a:active {
-  color: #FFD700; /* Cor desejada para o link ativo */
+  color: #FFD700;
+  /* Cor desejada para o link ativo */
 }
 
 description:not(:target) {
-    display: none;
-  }
-  
-  description:target {
-    display: block;
-  }
+  display: none;
+}
+
+description:target {
+  display: block;
+}
