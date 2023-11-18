@@ -1,23 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,500&display=swap");
 main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: darkorchid;
+  color: #995F55;
+}
+main #section-one {
+  background: #E9C6BF;
+  box-shadow: 0 0 1px rgba(233, 198, 191, 0.25);
+  color: TextColorOne;
+  width: 30vw;
+  height: 30vh;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main #section-two {
-  color: green;
+  background: #B1E1D1;
+  box-shadow: 0 0 1px rgba(177, 225, 209, 0.25);
+  color: TextColorOne;
+  width: 30vw;
+  height: 30vh;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #section-three {
+  background: #F0E44F;
+  box-shadow: 0 0 1px rgba(240, 228, 79, 0.25);
+  color: TextColorOne;
+  width: 30vw;
+  height: 30vh;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-  background-color: burlywood;
+  background-color: #FBF5F1;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body header {
-  color: crimson;
+  color: #3C6B59;
   width: 100%;
 }
 body header h1 {
-  font-style: italic;
   text-align: center;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 3rem;
+}
+body h3 {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */

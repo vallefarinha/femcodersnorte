@@ -1,12 +1,19 @@
 
 @import 'variables';
+@import 'mixin';
 
 main{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     color: $TextColorOne;
+    #section-one{
+        @include theme($theme: $PrimaryColor);
+    }
     #section-two{
-        color: $TextColortwo;
+        @include theme($theme: $SecondaryColor);
+    }
+    #section-three{
+        @include theme($theme: $TextColortwo);
     }
 }
