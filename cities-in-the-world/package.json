@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2"
+  },
+  "scripts": {
+    "sass-watcher": "npx sass --watch src/sass/custom.scss:public/css/custom.css"
+  }
+}
