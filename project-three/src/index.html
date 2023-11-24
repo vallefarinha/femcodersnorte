@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="../dist/output.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="../dist/output.css" rel="stylesheet">
 
 </head>
+
 <body>
- 
+
   <div class="flex items-center justify-center h-screen bg-emerald-50">
-    <div class="grid grid-cols-4 gap-4 bg-emerald-200 p-4 max-w-screen-sm w-full rounded"> 
-      <div class="col-span-4 bg-gray-50 text-center h-48 rounded mb-4" id="result"></div>
-      <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer">C</button>
+    <div class="grid grid-cols-4 gap-4 bg-emerald-200 p-4 max-w-screen-sm w-full rounded">
+      <div class="col-span-4 bg-gray-50 h-48 rounded mb-4 p-4 relative z-10">
+        <input type="text" name="price" id="previous-number" class=" w-full text-gray-900 ">
+        <input type="text" name="price" id="result" class=" w-full text-gray-900 font-bold h-10 text-2xl">
+      </div>
+      <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer delete">CE</button>
       <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer">H</button>
-      <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer">C</button>
+      <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer clearAll">C</button>
       <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer">E</button>
       <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer btn-operation">%</button>
       <button class="btn-input bg-gray-50 text-center rounded hover:bg-emerald-50 cursor-pointer btn-operation">√</button>
@@ -35,9 +40,9 @@
       <button class="bg-gray-50 text-center rounded mb-3 hover:bg-emerald-50 cursor-pointer btn-input">.</button>
       <button class="bg-gray-50 text-center rounded row-span-2 mb-3 hover:bg-emerald-50 cursor-pointer btn-input equal btn-operation">=</button>
     </div>
-        
   </div>
-  
-      <script src="./script.js"></script>
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
