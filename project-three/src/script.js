@@ -9,14 +9,16 @@ function printFirstNumber(event) {
 }
 
 document.addEventListener('click', function (event) {
-  
-    if (event.target.classList.contains('btn-input')) {
+     if (event.target.classList.contains('btn-input')) {
         printFirstNumber(event);
     }
 
     if (event.target.classList.contains('btn-operation')) {
-        previousNumber.value =  printFirstNumber(event);
+        let meuArray = previousNumber.value.split(/([+\-*/])/);
+        meuArray = meuArray.filter(item => item !== '')
+        previousNumber.value +=  printFirstNumber(event);
         resultContainer.value = "";
+
     }
 
     if (event.target.classList.contains('equal')) {
@@ -24,9 +26,12 @@ document.addEventListener('click', function (event) {
       previousNumber.value = operation;
       operation = operation.slice(0, -1);
       console.log(operation);
-      resultContainer.value = eval(operation);
+      try {
+        resultContainer.value = eval(operation);
+    } catch (error) {
+    }
       
-     
+        
     }
 
     if (event.target.classList.contains('clearAll')) {
@@ -36,23 +41,9 @@ document.addEventListener('click', function (event) {
 
     if (event.target.classList.contains('delete')) {
         resultContainer.value = resultContainer.value.slice(0, -3);
+        if(resultContainer.value == ""){
+            previousNumber.value = previousNumber.value.slice(0, -1)
+        }
     }
 });
 
-
-// function sum(){
-
-// }
-
-
-// function sub(){
-    
-// }
-
-// function divide(){
-    
-// }
-
-// function multiply(){
-    
-// }
