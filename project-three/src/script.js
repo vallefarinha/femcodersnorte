@@ -30,7 +30,7 @@ document.addEventListener('click', function (event) {
         resultContainer.value = eval(operation);
     } catch (error) {
     }
-      
+    previousNumber.value = "";
         
     }
 
