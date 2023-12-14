@@ -62,8 +62,7 @@ button {
 #container-images{
   width: 200px;
   height: 200px;
-  padding: 40px;
- 
+  padding: 40px; 
   position: relative;
   transform-style: preserve-3d;
 }

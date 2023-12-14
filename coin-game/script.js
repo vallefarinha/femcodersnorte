@@ -7,8 +7,6 @@ let tailImg = document.getElementById("tail");
 let tailCounter = document.getElementById("tail-counter");
 let headCounter = document.getElementById("head-counter");
 
-let isFlipping = false;
-
 let heads = 0;
 let tails = 0;
 
@@ -18,13 +16,13 @@ turnBtn.addEventListener("click", () =>{
 
     if(i){
         setTimeout(function(){
-            images.style.animation = "spin-heads 3s forwards"
+            images.style.animation = "spin-heads 4s forwards"
         }, 100);
         heads++
     }
     else {
         setTimeout(function(){
-            images.style.animation = "spin-tails 3s forwards"
+            images.style.animation = "spin-tails 4s forwards"
         }, 100);
         tails++
     }
