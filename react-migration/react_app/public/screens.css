@@ -1,0 +1,86 @@
+.container-circles-bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0;
+}
+
+.container-screens {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .green-diamond {
+    margin-top: 2rem;
+  }
+  
+  .yellow-circle {
+    width: 50px;
+    height: 50px;
+    margin-right: -5%;
+  }
+  
+  .container-left-white-circle {
+    display: flex;
+    flex-direction: column;
+    height: 855px;
+    justify-content: end;
+  }
+  
+  .container-white-circle-left-bottom {
+    background-image: url(../../src/assets/img//decorative-half-white-circle-left.png);
+    width: 215px;
+    height: 430px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 0;
+  }
+  
+  .container-white-circle-right-bottom {
+    background-image: url(../../src/assets/img//decorative-half-white-circle-right.png);
+    width: 215px;
+    height: 430px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-right: 0;
+  }
+  
+  .blue-circle-bottom {
+    width: 80px;
+    height: 100%;
+  }
+  
+  .container-blue-circle {
+    width: 200px;
+    height: 200px;
+    margin-left: -15%;
+  }
+  
+  #screens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-paragraph {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }

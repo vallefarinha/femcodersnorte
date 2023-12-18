@@ -1,0 +1,19 @@
+.container-logos {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.container-logos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFFF;
+  }
+  
+.container-logo img {
+    width: 250px;
+  }
+

@@ -1,42 +1,33 @@
-#root {
-  max-width: 1280px;
+@import url(../public/animations.css);
+@import url(../public/buttons.css);
+@import url(../public/colors.css);
+@import url(../public/footer.css);
+@import url(../public/mainTitleSection.css);
+@import url(../public/mediaqueries.css);
+@import url(../public/text.css);
+@import url(../public/mainTitleSection.css);
+@import url(../public/containerIcons.css);
+@import url(../public/nav.css);
+@import url(../public/description.css);
+@import url(../public/features.css);
+@import url(../public/cardsContainer.css);
+@import url(../public/containerLogos.css);
+@import url(../public/containerIconsBottom.css);
+@import url(../public/screens.css);
+
+html {
+  font-size: 16px;
+  width: 100vw;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: #f7fafd !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+main{
+  width: 100%;
+  max-width: 1920px;;
 }
